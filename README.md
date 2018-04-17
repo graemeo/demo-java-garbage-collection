@@ -25,11 +25,11 @@ To build:
 To run program - with logging to console:
 
 ```bash
-java -Xms3m -Xmx3m -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -jar build/libs/demo-java-garbage-collection.jar 
+java -Xms3m -Xmx3m -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -jar build/libs/demo-java-garbage-collection.jar 
 ```
 
 To run program - with logging to file:
 
 ```bash
-java -Xms3m -Xmx3m -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:gc.log -jar build/libs/demo-java-garbage-collection.jar
+java -Xms3m -Xmx3m -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -Xloggc:gc.log -jar build/libs/demo-java-garbage-collection.jar
 ```
